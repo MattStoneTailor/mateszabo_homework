@@ -39,7 +39,7 @@ and store the given information in a server, just simply go to
 
 The abstract methods (`retrieveUserData`, `saveUserData`) are the same.
 
-##Explanation
+## Explanation
 1. **Build the project**:
    First of all I had to choose the way how the application getting automatically built.
    For a bigger project in a real-life scenario I would use [Gatsby](https://www.gatsbyjs.com) or [Next.js](https://nextjs.org) because these
@@ -60,7 +60,7 @@ The abstract methods (`retrieveUserData`, `saveUserData`) are the same.
 when we want to show it again and someone visits it from a different size of viewport (mobile) we'll be able
 to show the most appropriate image sizes.
 
-##Scripts
+## Scripts
 Command | Description
 --- | ---
 `yarn start:dev` | Build and serve app in development mode, using hot-reload `http://localhost:8080`
