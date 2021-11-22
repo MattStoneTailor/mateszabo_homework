@@ -1,0 +1,21 @@
+@import "../../../styles/colors";
+@import "../../../styles/sizes";
+@import "../../../styles/fonts";
+
+.errorMessage {
+  background: $error;
+  color: $white;
+  padding: calc(#{$baseSize} / 2);
+  font-weight: bold;
+  display: block;
+  margin-bottom: $baseSize;
+  font-size: .8rem;
+  font-family: $fontPoppins;
+
+  &.floating {
+    position: absolute;
+    top: $formElementLeft;
+    right: 0;
+    border-radius: 100px 0 100px 100px;
+  }
+}

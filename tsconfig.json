@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es6", /*Specify ECMAScript target version*/
+    "rootDir": "src",/*ts source direcotry*/
+    "outDir": "dist", /*where to compile javascript files*/
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "removeComments": true,
+    "noEmit": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "declarations.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/stories"
+  ]
+}

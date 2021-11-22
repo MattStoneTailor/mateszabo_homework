@@ -1,0 +1,25 @@
+@import "sizes";
+
+@mixin largeBreakpoint {
+  @media screen and (max-width: $appSize) {
+    @content;
+  }
+}
+
+@mixin smallBreakpoint {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin customBreakpoint($maxWidth) {
+  @media screen and (max-width: $maxWidth) {
+    @content;
+  }
+}
+
+@mixin ie {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}

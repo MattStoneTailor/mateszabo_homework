@@ -1,0 +1,73 @@
+@import "../../styles/sizes";
+@import "../../styles/colors";
+@import "../../styles/breakpoints";
+@import "../../styles/fonts";
+
+.footer {
+  display: block;
+  background: rgba($black, .9);
+  color: $primary;
+  cursor: default;
+
+  .about {
+    color: $primaryDark;
+  }
+
+  h2 {
+    color: $mainBackground;
+    font-family: $fontPoppins;
+    margin-bottom: 0;
+  }
+  section {
+    display: flex;
+    margin: 0 auto;
+    width: $appSize;
+    font-family: $fontRoboto;
+
+    @include largeBreakpoint() {
+      width: auto;
+    }
+    @include customBreakpoint(650px) {
+      display: block;
+    }
+  }
+  article {
+    position: relative;
+    padding: 0 calc(#{$baseSize} * 2);
+    width: 33%;
+
+    &:not(:last-child):after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 20%;
+      height: 60%;
+      width: 1px;
+      background: rgba($mainBackground, .2);
+    }
+
+    @include largeBreakpoint() {
+      width: unset;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: $baseSize;
+    font-size: .9rem;
+
+    li {
+      margin: 5px 0;
+
+      svg {
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  p {
+    padding-left: $baseSize;
+    font-size: .9rem;
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../styles/sizes";
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.userProfile {
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 2rem;
+      margin-left: calc(#{$baseSize} * 2);
+
+      @include customBreakpoint(650px) {
+        margin-left: 0;
+      }
+    }
+
+    @include customBreakpoint(650px) {
+      flex-direction: column;
+    }
+  }
+
+  dl {
+    width: 400px;
+    margin: calc(#{$baseSize} * 2) auto;
+
+    dt {
+      margin-top: $baseSize;
+      font-family: $fontHelvetica;
+      font-size: .85rem;
+
+      svg, span {
+        vertical-align: text-top;
+      }
+      svg {
+        margin-right: $baseSize;
+      }
+
+      @include customBreakpoint(650px) {
+        font-size: 1rem;
+      }
+    }
+    dd {
+      font-family: $fontPoppins;
+      margin-left: calc(#{$baseSize} * 2);
+      word-break: break-word;
+
+      @include smallBreakpoint() {
+        margin-left: 0;
+      }
+    }
+
+    @include customBreakpoint(650px) {
+      width: auto;
+    }
+  }
+
+  &.noContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  p span {
+    word-break: break-word;
+    color: $grey600;
+  }
+}

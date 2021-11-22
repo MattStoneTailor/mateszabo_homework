@@ -1,0 +1,33 @@
+@import "../../../styles/colors";
+@import "../../../styles/sizes";
+@import "../../../styles/fonts";
+
+.submitButton {
+  position: relative;
+  background: $primaryDark;
+  display: block;
+  color: $white;
+  padding: $baseSize calc(#{$baseSize} * 2);
+  margin: 0 auto;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  transition: background 200ms, color 200ms, box-shadow 300ms;
+  font-weight: bold;
+  font-family: $fontHelvetica;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 black;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $primary;
+    box-shadow: 0 0 10px $primaryDark;
+  }
+
+  &[disabled] {
+    opacity: .4;
+    cursor: default;
+    pointer-events: none;
+  }
+}

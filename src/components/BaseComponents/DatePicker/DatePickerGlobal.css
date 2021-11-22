@@ -1,0 +1,17 @@
+.react-datepicker__navigation--years-upcoming:after,
+.react-datepicker__navigation--years-previous:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  display: inline-block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.react-datepicker__navigation--years-upcoming:after {
+  top: 14px;
+  border-bottom: 10px solid rgba(0, 0, 0, .5);
+}
+.react-datepicker__navigation--years-previous:after {
+  bottom: 14px;
+  border-top: 10px solid rgba(0, 0, 0, .5);
+}

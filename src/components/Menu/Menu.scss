@@ -1,0 +1,35 @@
+@import "../../styles/sizes";
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.menu {
+  display: flex;
+  font-family: $fontPoppins;
+  font-size: 1rem;
+
+  a {
+    padding: calc(#{$baseSize} * 2);
+    text-decoration: none;
+    color: rgba($white, .8);
+    transition: background 300ms, color 300ms;
+
+    &.active,
+    &:hover,
+    &:focus,
+    &:active {
+      background: rgba(0, 0, 0, .1);
+      color: $white;
+    }
+
+    @include smallBreakpoint() {
+      padding: $baseSize;
+    }
+  }
+
+  @include smallBreakpoint() {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+}

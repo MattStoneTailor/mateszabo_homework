@@ -1,0 +1,23 @@
+@import "../../styles/sizes";
+@import "../../styles/colors";
+@import "../../styles/breakpoints";
+@import "../../styles/fonts";
+
+.header {
+  background: $primary;
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: $appSize;
+
+    @include largeBreakpoint() {
+      width: unset;
+    }
+    @include smallBreakpoint() {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "colors";
+@import "breakpoints";
+@import "sizes";
+
+@mixin scrollbar {
+  @media screen and (min-width: 600px) {
+    &::-webkit-scrollbar {
+      width: $baseSize;
+    }
+    &::-webkit-scrollbar-track {
+      background: $grey450;
+      border-radius: $baseSize;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $primaryDark;
+      border-radius: $baseSize;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: $primaryDark;
+    }
+  }
+}

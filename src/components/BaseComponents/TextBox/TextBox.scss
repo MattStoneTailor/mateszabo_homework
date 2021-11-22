@@ -1,0 +1,18 @@
+@import "../../../styles/colors";
+@import "../../../styles/sizes";
+@import "../../../styles/fonts";
+
+.textBox {
+  display: block;
+  padding: $baseSize;
+  font-size: 0.8rem;
+  border: 1px solid $grey500;
+  width: 100%;
+  font-family: $fontPoppins;
+}
+
+.label {
+  display: block;
+  margin-left: $formElementLeft;
+  margin-bottom: calc(#{$baseSize} * 2);
+}

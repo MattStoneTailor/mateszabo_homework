@@ -1,0 +1,28 @@
+@import "../../styles/sizes";
+@import "../../styles/breakpoints";
+
+$largeSize: 250px;
+$smallSize: 150px;
+
+.profileImage {
+  position: relative;
+  height: $largeSize;
+  width: $largeSize;
+  border-radius: $largeSize;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid black;
+  margin: 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+
+  @include smallBreakpoint() {
+    height: $smallSize;
+    width: $smallSize;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../styles/colors";
+
+.link {
+  text-decoration: none;
+  color: $primary;
+  transition: color 300ms;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $primaryDark;
+  }
+}
